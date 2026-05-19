@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Hot-drinks.css">
+        <script>
+            let total=0
+            function calcullatte(){
+                let p=4
+                total=total+p
+                alert("You have ordered Latte, Your total price is: "+total+"$");
+            }
+            function calculcor(){
+                let p=3.5
+                total=total+p
+                alert("You have ordered Cortado, Your total price is: "+total+"$");
+            }
+            function calculflat(){
+                let p=4
+                total=total+p
+                alert("You have ordered Flat White, Your total price is: "+total+"$");
+            }
+            function calculesp(){
+                let p=1.5
+                total=total+p
+                alert("You have ordered Espresso, Your total price is: "+total+"$");
+            }
+            function calculamr(){
+                let p=2
+                total=total+p
+                alert("You have ordered Americano, Your total price is: "+total+"$");
+            }
+            function calculturk(){
+                let p=2
+                total=total+p
+                alert("You have ordered Turkish Coffee, Your total price is: "+total+"$");
+            }
+            function calculcapp(){
+                let p=4
+                total=total+p
+                alert("You have ordered Cappuccino, Your total price is: "+total+"$");
+            }
+            function calcultea(){
+                let p=0.5
+                total=total+p
+                alert("You have ordered Tea, Your total price is: "+total+"$");
+            }
+            function calculhot(){
+                let p=4
+                total=total+p
+                alert("You have ordered Hot chocolate, Your total price is: "+total+"$");
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <div id="to">
+                <p id="ln"><b>Kr<font>ema</font></b></p>
+                <p id="cf"><b>Coffee House</b></p>
+            </div>
+            <div id="d1">
+                <img id="logo" src="logo_crimson-modified.png">
+            </div>
+            <div id="w1"><p id="p4">.</p></div>
+            <div id="w2"><button><a href="Home.html"><b class="size">Home</b></a></button></div>
+            <div id="w3"><button><a href="Hot-Drinks.html"><b class="size">Hot Drinks</b></a></button></div>
+            <div id="w4"><button><a href="Cold-Drinks.html"><b class="size">Cold Drinks</b></a></button></div>
+            <div id="w5"><button><a href="cakes-icecream.html"><b class="size">Ice Cream and Cakes</b></a></button></div>
+            <div id="w6"><button><a href="contact.html"><b class="size">Contact Us</b></a></button></div>
+        </div>
+        <div id="div2">
+            <p><input id="in1"type="text" placeholder="Search for Hot Drinks" size="80%"></p>
+        </div>
+        <div id="design">
+            <div id="h">
+                <h1>
+                    <img id="icon" src="icon-coffee.jpg">
+                    <b>Hot Drinks</b>
+                </h1>
+            </div>
+            <div class="div3" id="div6">
+                <div>
+                    <a href="latte-modified.png"><img class="hot" src="latte-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Latte</h2>
+                    <p class="info" ><b>Price:</b> 4$</p>
+                    <p class="info" >
+                        <b>Flavors:</b>
+                        <select>
+                            <option>None</option>
+                            <option>Caramel</option>
+                            <option>Vanilla</option>
+                            <option>Mocha</option>
+                        </select>
+                    </p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="latte">
+                        M:<input type="radio" name="latte" checked="checked">
+                        L:<input type="radio" name="latte">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calcullatte();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div7">
+                <div>
+                    <a href="cortado-modified.png"><img class="hot" src="cortado-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Cortado</h2>
+                    <p class="info" ><b>Price:</b> 3.5$</p>
+                    <p class="info" >
+                        <b>Flavors:</b>
+                        <select>
+                            <option>None</option>
+                            <option>Caramel</option>
+                            <option>Vanilla</option>
+                            <option>Mocha</option>
+                        </select>
+                    </p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="cortado">
+                        M:<input type="radio" name="cortado" checked="checked">
+                        L:<input type="radio" name="cortado">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculcor();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div8">
+                <div>
+                    <a href="flat white-modified.png"><img class="hot" src="flat white-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Flat White</h2>
+                    <p class="info" ><b>Price:</b> 4$</p>
+                    <p class="info" >
+                        <b>Flavors:</b>
+                        <select>
+                            <option>None</option>
+                            <option>Caramel</option>
+                            <option>Vanilla</option>
+                            <option>Mocha</option>
+                        </select>
+                    </p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Flat White">
+                        M:<input type="radio" name="Flat White" checked="checked">
+                        L:<input type="radio" name="Flat White">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculflat();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div3">
+                <div>
+                    <a href="espresso-modified.png"><img class="hot" src="espresso-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Espresso</h2>
+                    <p class="info" ><b>Price:</b> 1.5$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Espresso">
+                        M:<input type="radio" name="Espresso" checked="checked">
+                        L:<input type="radio" name="Espresso">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculesp();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div4">
+                <div>
+                    <a href="American-modified.png"><img class="hot" src="American-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Americano</h2>
+                    <p class="info" ><b>Price:</b> 2$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Americano">
+                        M:<input type="radio" name="Americano" checked="checked">
+                        L:<input type="radio" name="Americano">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculamr();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div5">
+                <div>
+                    <a href="turkish-modified.png"><img class="hot" src="turkish-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Turkish Coffee</h2>
+                    <p class="info" ><b>Price:</b> 2$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Turkish Coffee">
+                        M:<input type="radio" name="Turkish Coffee" checked="checked">
+                        L:<input type="radio" name="Turkish Coffee">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculturk();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div9">
+                <div>
+                    <a href="cappuccino-modified.png"><img class="hot" src="cappuccino-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Cappuccino</h2>
+                    <p class="info" ><b>Price:</b> 4$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Cappuccino">
+                        M:<input type="radio" name="Cappuccino" checked="checked">
+                        L:<input type="radio" name="Cappuccino">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculcapp();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div10">
+                <div>
+                    <a href="tea-modified.png"><img class="hot" src="tea-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Tea</h2>
+                    <p class="info" ><b>Price:</b> 0.5$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Tea">
+                        M:<input type="radio" name="Tea" checked="checked">
+                        L:<input type="radio" name="Tea">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calcultea();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div11">
+                <div>
+                    <a href="hot-chocolate,jpg-modified.png"><img class="hot" src="hot-chocolate,jpg-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Hot Chocolate</h2>
+                    <p class="info" ><b>Price:</b> 4$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Hot Chocolate">
+                        M:<input type="radio" name="Hot Chocolate" checked="checked">
+                        L:<input type="radio" name="Hot Chocolate">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculhot();"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

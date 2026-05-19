@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Cold-drinks.css">
+         <script>
+            let total=0
+            function calculice(){
+                let p=3
+                total=total+p
+                alert("You have ordered Ice Americano, Your total price is: "+total+"$");
+            }
+            function calculfrapp(){
+                let p=4
+                total=total+p
+                alert("You have ordered Frappucino, Your total price is: "+total+"$");
+            }
+            function calculcaramel(){
+                let p=5
+                total=total+p
+                alert("You have ordered Caramel Frappe, Your total price is: "+total+"$");
+            }
+            function calculmocha(){
+                let p=5
+                total=total+p
+                alert("You have ordered Mocha Frappe, Your total price is: "+total+"$");
+            }
+            function calcullotus(){
+                let p=5
+                total=total+p
+                alert("You have ordered Milkshake Lotus, Your total price is: "+total+"$");
+            }
+            function calculoreo(){
+                let p=5
+                total=total+p
+                alert("You have ordered Milkshake Oreo, Your total price is: "+total+"$");
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <div id="to">
+                <p id="ln"><b>Kr<font>ema</font></b></p>
+                <p id="cf"><b>Coffee House</b></p>
+            </div>
+            <div id="d1">
+                <img id="logo" src="logo_crimson-modified.png">
+            </div>
+            <div id="w1"><p id="p4">.</p></div>
+            <div id="w2"><button><a href="Home.html"><b class="size">Home</b></a></button></div>
+            <div id="w3"><button><a href="Hot-Drinks.html"><b class="size">Hot Drinks</b></a></button></div>
+            <div id="w4"><button><a href="Cold-Drinks.html"><b class="size">Cold Drinks</b></a></button></div>
+            <div id="w5"><button><a href="cakes-icecream.html"><b class="size">Ice Cream and Cakes</b></a></button></div>
+            <div id="w6"><button><a href="contact.html"><b class="size">Contact Us</b></a></button></div>
+        </div>
+        <div id="div2">
+            <p><input id="in1"type="text" placeholder="Search for Cold Drinks" size="80%"></p>
+        </div>
+        <div id="design">
+            <div id="h">
+                <h1>
+                    <img id="icon" src="Cold-icon.jpg">
+                    <b>Cold Drinks</b>
+                </h1>
+            </div>
+            <div class="div3" id="div6">
+                <div>
+                    <a href="Ice-americano-modified.png"><img class="hot" src="Ice-americano-modified.png"></a>
+                </div>
+                <div class="div">
+                    <h2>Ice Americano</h2>
+                    <p class="info" ><b>Price:</b> 3$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="ice">
+                        M:<input type="radio" name="ice" checked="checked">
+                        L:<input type="radio" name="ice">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculice();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div7">
+                <div>
+                    <a href="Frappuccino.jpg"><img id="Frappuccino" src="Frappuccino.jpg"></a>
+                </div>
+                <div class="div">
+                    <h2>Frappuccino</h2>
+                    <p class="info" ><b>Price:</b> 4$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Frappuccino">
+                        M:<input type="radio" name="Frappuccino" checked="checked">
+                        L:<input type="radio" name="Frappuccino">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculfrapp();"></p>
+                </div>
+            </div>
+            <div class="div3" id="div8">
+                <div>
+                    <a href="Caramel-frappe.jpg"><img id="Caramel-frappe" src="Caramel-frappe.jpg"></a>
+                </div>
+                <div class="div">
+                    <h2>Caramel Frappe</h2>
+                    <p class="info" ><b>Price:</b> 5$</p>
+                    <p class="info" >
+                        <b>Size:</b>
+                        S:<input type="radio" name="Caramel">
+                        M:<input type="radio" name="Caramel" checked="checked">
+                        L:<input type="radio" name="Caramel">
+                    </p>
+                    <p><input class="order" type="button" value="Order Now" onclick="calculcaramel();"></p>
+                </div>
+            </div>
+            <div>
+                <div class="div3" id="div3">
+                    <div>
+                        <a href="Mocha-frappe.jpg"><img id="Mocha-frappe" src="Mocha-frappe.jpg"></a>
+                    </div>
+                    <div class="div">
+                        <h2>Mocha Frappe</h2>
+                        <p class="info" ><b>Price:</b> 5$</p>
+                        <p class="info" >
+                            <b>Size:</b>
+                            S:<input type="radio" name="Mocha">
+                            M:<input type="radio" name="Mocha" checked="checked">
+                            L:<input type="radio" name="Mocha">
+                        </p>
+                        <p><input class="order" type="button" value="Order Now" onclick="calculmocha();"></p>
+                    </div>
+                </div>
+                <div class="div3" id="div4">
+                    <div>
+                        <a href="Milkshake-lotus.jpg"><img id="Milkshake-lotus" src="Milkshake-lotus.jpg"></a>
+                    </div>
+                    <div class="div">
+                        <h2>Milkshake lotus</h2>
+                        <p class="info" ><b>Price:</b> 5$</p>
+                        <p class="info" >
+                            <b>Size:</b>
+                            S:<input type="radio" name="lotus">
+                            M:<input type="radio" name="lotus" checked="checked">
+                            L:<input type="radio" name="lotus">
+                        </p>
+                        <p><input class="order" type="button" value="Order Now" onclick="calcullotus();"></p>
+                    </div>
+                </div>
+                <div class="div3" id="div5">
+                    <div>
+                        <a href="Milkshake-oreo-modified.png"><img id="Milkshake-oreo" src="Milkshake-oreo-modified.png"></a>
+                    </div>
+                    <div class="div">
+                        <h2>Milkshake Oreo</h2>
+                        <p class="info" ><b>Price:</b> 5$</p>
+                        <p class="info" >
+                            <b>Size:</b>
+                            S:<input type="radio" name="oreo">
+                            M:<input type="radio" name="oreo" checked="checked">
+                            L:<input type="radio" name="oreo">
+                        </p>
+                        <p><input class="order" type="button" value="Order Now" onclick="calculoreo();"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

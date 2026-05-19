@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="contact.css">
+        <script>
+            function submit(){
+
+                let name=document.getElementById("name").value;
+                let email=document.getElementById("email").value;
+                let message=document.getElementById("message").value;
+                if (name=="" && email=="" && message==""){
+                            alert("You should fill the Name ,Email and Message")
+                }
+                else if (name=="" && email==""){
+                            alert("You should fill the Name and Email")
+                }
+                else if (name=="" && message==""){
+                            alert("You should fill the Name and Message")
+                }
+                else if (email=="" && message==""){
+                            alert("You should fill the Email and Message")
+                }
+                else if (name==""){
+                            alert("You should fill the Name")
+                }
+                else if (email==""){
+                            alert("You should fill the Email")
+                }
+                else if (message==""){
+                            alert("You should fill the Message")
+                }
+                else if (name!="" && email!="" && message!=""){
+                    alert("Are you sure: ")
+                    let n=prompt("Enter yes or no: ")
+                    if (n=="yes"){
+                        alert("Message sent")
+                    }
+                    else if (n=="no"){
+                        alert("Message not sent")
+                    }
+                    else {
+                        alert("Error")
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="orig"> 
+            <div id="div">
+                <div>
+                    <img src="OIP(4).jpeg">
+                    <h2>Address</h2>
+                    <p><b>LIU</b></p>
+                </div>
+                <div>
+                    <img src="OIP (5).jpeg">
+                    <h2>Phone</h2>
+                    <p><b>+961 71654789</b></p>
+                </div>
+                <div>
+                    <img src="R (2).png">
+                    <h2>Email</h2>
+                    <p id="email1"><b>Krema.CoffeeHouse@gmail.com</b></p>
+                </div>
+            </div>
+            <div id="div1">
+                <div id="info">
+                    <h1>Send us a message</h1>
+                    <p>If you have any work from me or any types of quries required to my tutorial, you can send me message from there.It's my pleasure to help you.</p>
+                </div>
+                <div class="cont">
+                    <b>Select Reason for Contact:</b>
+                    <select>
+                        <option value="query">Query</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+                <div class="cont"><b>Name:</b><input id="name" type="text" placeholder="Enter Your name"></div>
+                <div class="cont"><b>Email:</b><input id="email" type="text" placeholder="Enter you email"></div>
+                <div class="cont"><b>Message:</b><input id="message" type="text" placeholder="Enter your message"></div>
+                <div class="cont">
+                    <input class="sub" type="button" value="Submit" onclick="submit();">
+                    <a href="Home.html"><input class="sub" type="button" value="Go Back"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
